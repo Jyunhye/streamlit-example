@@ -3,11 +3,8 @@ from transformers import BlipProcessor, BlipForConditionalGeneration
 from PIL import Image
 import requests
 
-st.title('Image to Text')
-
-
 with st.container():
-    st.title('test')
+    st.title('Image to Text')
     with st.form(key="form"):
         img_file = st.file_uploader('이미지를 업로드 하세요.', type=['png', 'jpg', 'jpeg'])
         submit = st.form_submit_button(label = "확인")
